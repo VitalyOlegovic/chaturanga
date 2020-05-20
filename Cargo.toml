@@ -1,0 +1,26 @@
+[package]
+name = "chaturanga"
+version = "0.1.0"
+authors = [""]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+# GraphQL
+juniper = "0.14.2"
+# ORM
+diesel = { version = "^1.4", features = ["sqlite", "r2d2"] }
+# Environment variables management
+dotenv = "0.15.0"
+# Web framework based on an actor system
+actix-web = "^2"
+actix-rt = "1.1.1"
+# A framework for serializing and deserializing Rust data structures
+serde = "1.0.103"
+serde_json = "1.0.44"
+serde_derive = "1.0.103"
+# A simple logger configured via environment variables
+env_logger = "0.7.1"
+# Manage date and time
+chrono = { version = "0.4", features = ["serde"] }
